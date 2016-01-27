@@ -36,4 +36,9 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.post('/webhook', function(req, res) {
+    console.log(req.body);
+    res.json(req.body);
+});
+
 module.exports = router;
