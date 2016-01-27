@@ -5,6 +5,6 @@
  */
 var config = {};
 
-config.SECURESITE=process.env.SECURESITE || 'true';
+config.SECURESITE = process.env.SECURESITE || 'false';
 
 module.exports = config;
