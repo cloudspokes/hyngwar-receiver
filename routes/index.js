@@ -43,7 +43,7 @@ router.post('/webhooks', function(req, res) {
 
     if (shc) {
         res.set('Smartsheet-Hook-Response', shc);
-        res.send('Smartsheet-Hook-Response: ' + shc);
+        res.status(200).send('');
     } else {
         res.json(req.body);
     }
