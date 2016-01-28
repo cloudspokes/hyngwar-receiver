@@ -1,21 +1,18 @@
-# Site Prototype
+# hyngwar-receiver for smart sheet web hooks
 
-#### Build Status: ![build status](https://magnum-ci.com/status/e73e32a189c31cff8b6cd3421a73d6dd.png)
-#### Demo Site: [live on heroku](http://prototype-site-shell.herokuapp.com)
-
-### To set up:
-- put your HTML content under the /public folder. 
+### Set up:
+- put your HTML content under the /public folder.
     + Be sure to have an index page
     + putting content under /public/subs will generate an index that exposes each sub folder as a link. This is especially usefull for dropping prototype challenge results in for demo
 - for basic auth:
     + set an environmental variable "SECURESITE=true"
     + add your user:password combos in the /data/users.httpaswd file
 
-### To run: 
+### To run:
 
 ```
 $ npm install
-$ npm start 
+$ npm start
 ```
 
 ### To set up CI/CD with [Magnum CI](http://magnum-ci.com) & [Heroku](http://heroku.com)
