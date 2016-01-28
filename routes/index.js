@@ -37,7 +37,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/webhook', function(req, res) {
+
     console.log(req.body);
+    var shc = req.get('Smartsheet-Hook-Challenge');
+
+    if (shc) {
+        res.set('Smartsheet-Hook-Challenge', shc);
+    }
+
     res.json(req.body);
 });
 
